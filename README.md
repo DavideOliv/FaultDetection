@@ -3,13 +3,13 @@
 **Corso di Manutenzione Preventiva per la Robotica e l'automazione intelligente![](Aspose.Words.d46a6bb7-ac2c-4011-a214-dcad382f86ad.001.png)**
 
 - Prof. Alessandro Freddi
-  - Dr. Francesco Ferracuti
+- Dr. Francesco Ferracuti
 
 Studenti:
 
 - D'Agostino Lorenzo
-  - Lanciotti Antonio
-    - Olivieri Davide
+- Lanciotti Antonio
+- Olivieri Davide
 
 **Abstract![](Aspose.Words.d46a6bb7-ac2c-4011-a214-dcad382f86ad.002.png)**
 
@@ -26,15 +26,15 @@ Infine sono stati utilizzati gli output generati dall'algoritmo di sopra per add
 Il dataset in questione è composto di 4 file .RData (convertiti in .CSV) contenenti le simulazioni effettuate sul modello del processo. In particolare i file sono organizzati come segue:
 
 - **TEP\_FaultFree\_Training.csv**: contiene le simulazioni fault free da utilizzare in fase di train,
-  - **TEP\_FaultFree\_Testing.csv**: contenente i dati di testing fault free,
-    - **TEP\_Faulty\_Training.csv**: contenete le simulazioni per ogni classe di fault da utilizzare in fase di training,
-      - **Tep\_Faulty\_Testing.csv**: contenente i dati di test faulty.
+- **TEP\_FaultFree\_Testing.csv**: contenente i dati di testing fault free,
+- **TEP\_Faulty\_Training.csv**: contenete le simulazioni per ogni classe di fault da utilizzare in fase di training,
+- **Tep\_Faulty\_Testing.csv**: contenente i dati di test faulty.
 
 Le tabelle contenute all'interno del dataset contengono dati circa **52 sensori** oltre che informazioni circa la simulazione e la classe di fault associata:
 
 - **faultNumber**: da 0 a 20 (**0 → fault free**),
-  - **simulationRun**: indice della simulazione,
-    - **sample**: indice delle misurazioni associate alla *simulationRun*.
+- **simulationRun**: indice della simulazione,
+- **sample**: indice delle misurazioni associate alla *simulationRun*.
 
 L'intervallo temporale che intercorre tra un *sample* e l'altro è di 3 minuti.
 
@@ -285,4 +285,4 @@ Abbiamo tentato di addestrare una **SVM** ma le tempistiche erano eccessive. Il 
 Il file "./DistanzeStatistiche/distance\_dataset.mat" contiene:
 
 - **distances**: matrice 168000x1092 dei dati,
-  - **labels**: vettore di 168000 contenente i fault associati ad ogni riga del dataset.
+- **labels**: vettore di 168000 contenente i fault associati ad ogni riga del dataset.
